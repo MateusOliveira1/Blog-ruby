@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  resources :posts
   root 'home#index'
   get 'sobre' => 'home#about'
   get 'contato' => 'home/contato'
