@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   resources :posts
   root 'home#index'
   get 'sobre' => 'home#about'
-  get 'contato' => 'home/contato'
-  get 'teste' => 'home/test'
+  get 'contato' => 'home#contato'
+  
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
